@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="PaintingsList">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paintings</title>
+
+    <script type= "text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <script type= "text/javascript" src="app.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css ">
+</head>
+<body ng-controller="PaintingsController" style="background-color: grey;">
+    
+    <h1>Famous Paintings In The World</h1>
+    <hr>
+    <table>
+        <tr>
+            <td><button class="btn btn-danger"
+                        ng-click="previous();">PREVIOUS
+                </button>
+            </td>
+
+            <td img class="big" ng-src="{{paintings[paintingCount]}}"></td>
+            
+            <td><button btn btn-success
+                        ng-click="next();">NEXT
+                </button>
+            </td>
+
+        </tr>
+    </table>
+    
+</body>
+</html>
+    
+</body>
+</html>
